@@ -33,8 +33,8 @@ pnpm install
 Crie um arquivo .env.local na raiz do projeto e adicione a variável da API:
 
 env
-
 NEXT_PUBLIC_API_URL=http://localhost:7051/api
+
 🔒 Substitua pela URL correta da API usada na autenticação.
 
 ▶️ Rodando localmente
@@ -52,7 +52,6 @@ Acesse http://localhost:3000 no navegador para ver o app rodando.
 Você pode começar a editar a página inicial em app/page.tsx. As alterações são aplicadas automaticamente.
 
 📦 Estrutura do Projeto
-
 /app        # Páginas e rotas do Next.js
 /lib        # Funções auxiliares (ex: autenticação, chamadas de API)
 /types      # Definições TypeScript
