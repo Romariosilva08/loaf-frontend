@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 Projeto Loaf - Autenticação e Cadastro
 
-## Getting Started
+Este é um projeto em [Next.js](https://nextjs.org) criado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). Ele implementa telas de login, registro e controle de acesso de usuários.
 
-First, run the development server:
+## 🚀 Tecnologias
+
+- [Next.js](https://nextjs.org)
+- React
+- TypeScript
+- Tailwind CSS
+- API externa (em `.env`)
+
+## ⚙️ Pré-requisitos
+
+- Node.js 18 ou superior
+- npm, yarn, pnpm ou bun
+
+## 🔧 Instalação
+
+Clone o repositório e instale as dependências:
 
 ```bash
+git clone https://github.com/seu-usuario/seu-projeto.git
+cd seu-projeto
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+
+
+🛠️ Configuração do Ambiente
+Crie um arquivo .env.local na raiz do projeto e adicione a variável da API:
+
+env
+
+NEXT_PUBLIC_API_URL=http://localhost:7051/api
+🔒 Substitua pela URL correta da API usada na autenticação.
+
+▶️ Rodando localmente
+Execute o servidor de desenvolvimento:
+
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
-```
+Acesse http://localhost:3000 no navegador para ver o app rodando.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Você pode começar a editar a página inicial em app/page.tsx. As alterações são aplicadas automaticamente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📦 Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+/app        # Páginas e rotas do Next.js
+/lib        # Funções auxiliares (ex: autenticação, chamadas de API)
+/types      # Definições TypeScript
+/public     # Assets públicos
